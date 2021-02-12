@@ -1,6 +1,7 @@
 check50:
   checks:
-    hello world:
-      - run: ./GetName
-        stdin: baz
-        exit: 0
+    foo:
+      - run: ./GetName # run python3 foo.py
+        stdin: baz # insert baz into stdin
+        stdout: baz # expect baz in stdout
+        exit: 0 # expect program to exit with exitcode 0
