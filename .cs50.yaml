@@ -1,7 +1,6 @@
 check50:
   checks:
-    GetName:
+    hello world:
       - run: ./GetName
-        stdin:
-        - baz # insert baz into stdin
+        stdin: baz
         exit: 0
