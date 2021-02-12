@@ -2,4 +2,5 @@ check50:
   checks:
     foo:
       - run: ./GetName # run python3 foo.py
+        stdin: Matt
         exit: 0 # expect program to exit with exitcode 0
