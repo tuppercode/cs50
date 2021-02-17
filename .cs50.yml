@@ -1,6 +1,7 @@
-check50:
-  checks:
-    check1:
-      - run: ./LC1a 
-        stdin: 12
-        exit: 0 # expect program to exit with exitcode 0
+check50: 
+  files: &check50_files
+    - !exclude "*"
+    - !require hello.c
+
+submit50:
+  files: *check50_files
