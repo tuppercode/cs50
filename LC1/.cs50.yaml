@@ -1,1 +1,6 @@
-
+check50:
+  checks:
+    check1:
+      - run: ./LC1a 
+        stdin: 12
+        exit: 0 # expect program to exit with exitcode 0
